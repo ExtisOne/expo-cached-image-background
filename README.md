@@ -2,20 +2,20 @@
 Super fast cached image component for react-native applications built with expo
 
 ## Forked from
-https://github.com/echowaves/expo-cached-image
+https://github.com/echowaves/expo-cached-image-background
 
 ## Usage
 ### Add to project
 ```
-yarn add expo-cached-image
+yarn add expo-cached-image-background
 ```
 or
 ```
-expo install expo-cached-image
+expo install expo-cached-image-background
 ```
 ### CachedImage
 ```JavaScript
-import CachedImage from 'expo-cached-image'
+import CachedImage from 'expo-cached-image-background'
 ```
 
 Then it can be referenced in code like this:
@@ -52,7 +52,7 @@ Then it can be referenced in code like this:
 
 ### CacheManager
 ```JavaScript
-import { CacheManager } from 'expo-cached-image'
+import { CacheManager } from 'expo-cached-image-background'
 ```
 
 If you have an image on local file system, which you want to add to cache, do this:
