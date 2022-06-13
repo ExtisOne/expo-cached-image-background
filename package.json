@@ -1,18 +1,18 @@
 {
-  "name": "expo-cached-image",
-  "version": "45.1.1",
+  "name": "expo-cached-image-background",
+  "version": "1.0.0",
   "description": "Super fast cached image component for react-native applications powered by expo",
   "main": "lib/index.js",
   "files": [
     "lib"
   ],
   "scripts": {
-    "prepublish": "echo 'prepublishing' && rm -rf ./lib && babel src --out-dir lib && yarn link",
+    "prepublish": "babel src --out-dir lib && yarn link",
     "test": "rm -rf ./lib && jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/echowaves/expo-cached-image.git"
+    "url": "git+https://github.com/ExtisOne/expo-cached-image-background.git"
   },
   "keywords": [
     "expo",
@@ -23,9 +23,9 @@
   "author": "echowaves.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/echowaves/expo-cached-image/issues"
+    "url": "https://github.com/ExtisOne/expo-cached-image-background/issues"
   },
-  "homepage": "https://github.com/echowaves/expo-cached-image#readme",
+  "homepage": "https://github.com/ExtisOne/expo-cached-image-background#readme",
   "peerDependencies": {
     "expo-file-system": "~13.1.0",
     "react": "17.0.2",
