@@ -1,7 +1,7 @@
 # expo-cached-image
 Super fast cached image component for react-native applications built with expo
 
-##Forked from
+## Forked from
 https://github.com/echowaves/expo-cached-image
 
 ## Usage
