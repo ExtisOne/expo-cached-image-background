@@ -3,7 +3,7 @@ import React, {
 } from 'react'
 
 import {
-  Image,
+  Image, ImageBackground,
 } from 'react-native'
 import * as FileSystem from 'expo-file-system'
 
@@ -12,7 +12,7 @@ import PropTypes from 'prop-types'
 import * as CONST from './consts.js'
 
 const CachedImage = props => {
-  const { source, cacheKey, placeholderContent } = props
+  const { source, cacheKey, placeholderContent, isBackground } = props
   const { uri, headers, expiresIn } = source
   const fileURI = `${CONST.IMAGE_CACHE_FOLDER}${cacheKey}`
 
@@ -73,6 +73,19 @@ const CachedImage = props => {
   }
   // console.log({placeholderContent})
   if (!imgUri) return (placeholderContent || null)
+
+  if(isBackground == true) {
+    return (
+      <ImageBackground
+      // eslint-disable-next-line react/jsx-props-no-spreading
+      {...props}
+      source={{
+        ...source,
+        uri: imgUri,
+      }}
+    />
+    )
+  }
 
   return (
     <Image
